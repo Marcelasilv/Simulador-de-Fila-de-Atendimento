@@ -1,0 +1,16 @@
+let filaArr = [];
+
+function entrar() {
+  filaArr.push(nome.value);
+  nome.value = "";
+  atualizar();
+}
+
+function chamar() {
+  filaArr.shift();
+  atualizar();
+}
+
+function atualizar() {
+  fila.innerHTML = filaArr.map(p => `<li>${p}</li>`).join("");
+}
